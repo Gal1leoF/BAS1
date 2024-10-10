@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAS Kockajáték</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>BAS Kockajáték</h1>
+        <p>Üdvözöllek, kérlek írd be a neved!</p>
+        <input type="text" id="player-name" placeholder="Neved/beceneved">
+        <button id="new-game">Új játék</button>
+    </div>
+
+    <div id="belief-options" style="display: none;">
+        <button id="believe">Elhiszem</button>
+        <button id="disbelieve">Nem hiszem el</button>
+    </div>
+    
+    <div id="game-screen" style="display: none;">
+        <h2 id="welcome-message">Üdvözöllek!</h2>
+        <button id="roll-dice">Dobj a kockával!</button>
+        <div id="dice-result" style="display: none;">
+            <p>Dobásod: <span id="player-roll"></span></p>
+            <input type="text" id="player-claim" placeholder="Amit mondasz...">
+            <button id="submit-claim">Beküld</button>
+        </div>
+        <p id="computer-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
